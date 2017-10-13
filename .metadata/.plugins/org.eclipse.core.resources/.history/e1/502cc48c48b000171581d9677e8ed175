@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+var msg = prompt("문자열을 입력하세요.");
+
+function check(str){
+	var n = str.indexOf("XXX");
+
+	if(n==-1)
+		return false;
+	else
+		return true;
+}
+
+alert(check(msg));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

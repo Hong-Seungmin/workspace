@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+</head>
+<body>
+	<div id="clock"></div>
+	<script type="text/javascript">
+		function setClock() {
+			var now = new Date();
+			var s = now.getMonth() + 1 + "월" + now.getDate() + "일" + now.getSeconds();
+
+			document.getElementById('clock').innerHTML = s;
+			setTimeout('setClock()', 60*60*24*1000);
+		}
+		setClock();
+	</script>
+</body>
+</html>

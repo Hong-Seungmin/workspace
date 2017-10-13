@@ -35,6 +35,7 @@ public class ClosePn extends JPanel {
 
 	public void setTranslucent() {
 		alpha = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.5f);
+
 	}
 
 	public void setOpaque() {
