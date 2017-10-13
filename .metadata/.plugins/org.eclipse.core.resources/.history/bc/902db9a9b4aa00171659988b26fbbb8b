@@ -1,0 +1,64 @@
+package listViewTest;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Mytitle extends JPanel{
+	private JLabel titleName;
+	private ClosePn close;
+	
+	public Mytitle(){
+		super(new BorderLayout());
+		
+		titleName = new JLabel("talk talk");
+		titleName.setForeground(new Color(255, 255, 255));
+		
+		close = new ClosePn();
+		close.setPreferredSize(new Dimension(24, 24));
+		close.addMouseListener(new MouseListener() {
+			
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void mousePressed(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void mouseExited(MouseEvent e) {
+				close.setOpaque();
+			}
+			
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				close.setTranslucent();
+				
+			}
+			
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		add(titleName,BorderLayout.WEST);
+		add(close,BorderLayout.EAST);
+	}
+}

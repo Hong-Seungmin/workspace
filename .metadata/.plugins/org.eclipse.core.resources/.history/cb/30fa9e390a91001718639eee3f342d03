@@ -1,0 +1,8 @@
+package sparrow;
+
+public abstract class Sparrow {	
+	public Sparrow() {
+	}
+
+	public abstract void getSound();
+}

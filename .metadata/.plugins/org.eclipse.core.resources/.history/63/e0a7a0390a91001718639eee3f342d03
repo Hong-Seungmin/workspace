@@ -1,0 +1,9 @@
+package sparrow;
+
+public class Dove {
+
+	public Dove() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
